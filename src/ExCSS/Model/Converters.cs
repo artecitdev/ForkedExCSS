@@ -379,6 +379,7 @@ namespace ExCSS
             LengthOrPercentConverter.Or(NumberConverter).Or(Keywords.Normal);
 
         public static readonly IValueConverter BorderSliceConverter = PercentConverter.Or(NumberConverter);
+        public static readonly IValueConverter ImageBorderOutsetConverter = LengthConverter.Or(NumberConverter);
 
         public static readonly IValueConverter ImageBorderWidthConverter =
             LengthOrPercentConverter.Or(NumberConverter).Or(Keywords.Auto);
